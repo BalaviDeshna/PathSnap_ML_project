@@ -1,0 +1,3 @@
+partition,trips,gps_points,median_gps_points,median_nodes,median_arcs,median_route_arcs,gps_rows_invalid,nonpositive_gaps,gaps_over_2s,gaps_over_30s
+student_test,10,19160,1420.0,6596.5,13145.0,250.0,0,0,138,2
+train,80,208417,1529.0,9608.0,19526.5,280.0,0,0,2937,133

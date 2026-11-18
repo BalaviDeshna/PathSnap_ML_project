@@ -1,0 +1,158 @@
+{
+  "method": "Gaussian-process Bayesian optimisation with expected improvement",
+  "objective": "3-fold GroupKFold candidate-level binary macro F1",
+  "training_trips": 80,
+  "subset_rows": 24960,
+  "trials": [
+    {
+      "trial": 1,
+      "z": [
+        0.25,
+        0.5,
+        0.33
+      ],
+      "params": {
+        "n_estimators": 45,
+        "max_depth": 14,
+        "min_samples_leaf": 2
+      },
+      "cv_macro_f1": 0.8491637844977714,
+      "seconds": 1.313170225000249
+    },
+    {
+      "trial": 2,
+      "z": [
+        0.75,
+        0.75,
+        0.0
+      ],
+      "params": {
+        "n_estimators": 75,
+        "max_depth": 17,
+        "min_samples_leaf": 1
+      },
+      "cv_macro_f1": 0.8456977688691563,
+      "seconds": 2.098476226999992
+    },
+    {
+      "trial": 3,
+      "z": [
+        0.5,
+        0.25,
+        1.0
+      ],
+      "params": {
+        "n_estimators": 60,
+        "max_depth": 11,
+        "min_samples_leaf": 4
+      },
+      "cv_macro_f1": 0.8422286926391643,
+      "seconds": 1.6759255700007998
+    },
+    {
+      "trial": 4,
+      "z": [
+        0.22306930966808058,
+        0.5007366418472081,
+        0.271355595623774
+      ],
+      "params": {
+        "n_estimators": 43,
+        "max_depth": 14,
+        "min_samples_leaf": 2
+      },
+      "cv_macro_f1": 0.850219933686926,
+      "seconds": 1.3585427970001547
+    },
+    {
+      "trial": 5,
+      "z": [
+        0.004485300224665534,
+        0.22095464325849856,
+        0.16115073423809712
+      ],
+      "params": {
+        "n_estimators": 30,
+        "max_depth": 11,
+        "min_samples_leaf": 1
+      },
+      "cv_macro_f1": 0.8415523208631264,
+      "seconds": 0.9497822800003632
+    },
+    {
+      "trial": 6,
+      "z": [
+        0.7950848511323451,
+        0.8885982663249076,
+        0.23368070076240943
+      ],
+      "params": {
+        "n_estimators": 78,
+        "max_depth": 19,
+        "min_samples_leaf": 2
+      },
+      "cv_macro_f1": 0.850277640033328,
+      "seconds": 2.282022639000388
+    },
+    {
+      "trial": 7,
+      "z": [
+        0.6094541701803645,
+        0.23998241413552102,
+        0.28158888985699804
+      ],
+      "params": {
+        "n_estimators": 67,
+        "max_depth": 11,
+        "min_samples_leaf": 2
+      },
+      "cv_macro_f1": 0.8436523089743465,
+      "seconds": 1.9437792520002404
+    },
+    {
+      "trial": 8,
+      "z": [
+        0.5054381124764022,
+        0.4892385412320236,
+        0.44262236949746636
+      ],
+      "params": {
+        "n_estimators": 60,
+        "max_depth": 14,
+        "min_samples_leaf": 2
+      },
+      "cv_macro_f1": 0.8486768123005374,
+      "seconds": 1.8301900209999076
+    }
+  ],
+  "best_trial": {
+    "trial": 6,
+    "z": [
+      0.7950848511323451,
+      0.8885982663249076,
+      0.23368070076240943
+    ],
+    "params": {
+      "n_estimators": 78,
+      "max_depth": 19,
+      "min_samples_leaf": 2
+    },
+    "cv_macro_f1": 0.850277640033328,
+    "seconds": 2.282022639000388
+  },
+  "search_space": {
+    "n_estimators": [
+      30,
+      90
+    ],
+    "max_depth": [
+      8,
+      20
+    ],
+    "min_samples_leaf": [
+      1,
+      4
+    ]
+  },
+  "seed": 2026
+}

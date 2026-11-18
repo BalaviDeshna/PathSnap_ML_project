@@ -1,0 +1,28 @@
+{
+  "selected_model": "RandomForest_BayesianTuned",
+  "selection_basis": "Random Forest led six-model grouped CV; Bayesian-tuned RF was then selected after improving student-test development metrics. Reserved evaluator data remains untouched.",
+  "features": [
+    "distance_m",
+    "midpoint_distance_m",
+    "segment_length_m",
+    "heading_difference",
+    "gps_speed_mps",
+    "candidate_rank",
+    "start_distance_m",
+    "end_distance_m",
+    "time_gap_s"
+  ],
+  "candidate_k": 8,
+  "seed": 42,
+  "training_rows": 59999,
+  "untuned_rf": {
+    "n_estimators": 45,
+    "max_depth": 16,
+    "min_samples_leaf": 2
+  },
+  "bayesian_tuned_rf": {
+    "n_estimators": 78,
+    "max_depth": 19,
+    "min_samples_leaf": 2
+  }
+}

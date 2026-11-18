@@ -1,0 +1,63 @@
+{
+  "metric": "candidate-level binary macro F1",
+  "folds": 3,
+  "splitter": "GroupKFold by trip",
+  "rows": 59999,
+  "trips": 80,
+  "results": [
+    {
+      "model": "LogisticRegression",
+      "family": "linear/probabilistic",
+      "cv_candidate_macro_f1": 0.7017604827195835,
+      "cv_macro_f1_std": 0.0263223249143645,
+      "cv_log_loss": 0.42156472675953965,
+      "cv_fit_seconds": 0.15370817799885117,
+      "cv_predict_seconds": 0.004006997000033152
+    },
+    {
+      "model": "KNN",
+      "family": "instance-based",
+      "cv_candidate_macro_f1": 0.7866503117789061,
+      "cv_macro_f1_std": 0.012513425311128253,
+      "cv_log_loss": 0.7456332294580182,
+      "cv_fit_seconds": 0.13873663600043074,
+      "cv_predict_seconds": 1.5857397040008436
+    },
+    {
+      "model": "RandomForest",
+      "family": "ensemble",
+      "cv_candidate_macro_f1": 0.8373033015210769,
+      "cv_macro_f1_std": 0.014178586756690233,
+      "cv_log_loss": 0.31128172531046666,
+      "cv_fit_seconds": 12.159400062001623,
+      "cv_predict_seconds": 0.16914411599918822
+    },
+    {
+      "model": "ExtraTrees",
+      "family": "ensemble",
+      "cv_candidate_macro_f1": 0.7984670320633517,
+      "cv_macro_f1_std": 0.009687005509299393,
+      "cv_log_loss": 0.2599596090038068,
+      "cv_fit_seconds": 2.892972772000576,
+      "cv_predict_seconds": 0.27059623500008456
+    },
+    {
+      "model": "HistGradientBoosting",
+      "family": "boosting",
+      "cv_candidate_macro_f1": 0.8299578634876582,
+      "cv_macro_f1_std": 0.017689016719448312,
+      "cv_log_loss": 0.16630530096810928,
+      "cv_fit_seconds": 0.47091515899955994,
+      "cv_predict_seconds": 0.05305423600020731
+    },
+    {
+      "model": "AdaBoost",
+      "family": "boosting",
+      "cv_candidate_macro_f1": 0.7443797165235303,
+      "cv_macro_f1_std": 0.010763626464405618,
+      "cv_log_loss": 0.35873368358160507,
+      "cv_fit_seconds": 4.741783968000163,
+      "cv_predict_seconds": 0.048332183000638906
+    }
+  ]
+}

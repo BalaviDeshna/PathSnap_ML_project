@@ -1,0 +1,14 @@
+{
+  "selected_model": "RandomForest_BayesianTuned",
+  "candidate_macro_f1": 0.8514686409195986,
+  "candidate_precision_positive": 0.7400639049274063,
+  "candidate_recall_positive": 0.7352007573648159,
+  "candidate_log_loss": 0.16347115733130266,
+  "observation_top1_accuracy_mean_per_trip": 0.7378210098414064,
+  "hmm_top1_accuracy_mean_per_trip": 0.7521549662120205,
+  "classifier_route_continuity_mean": 0.8647808173302309,
+  "hmm_route_continuity_mean": 0.972632176028673,
+  "candidate_miss_rate": 0.06278705636743215,
+  "student_test_trips": 10,
+  "gps_observations": 19160
+}
